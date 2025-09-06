@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Serving Node</title>
-    <link rel="stylesheet" href="style.css">
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>File Upload</title>
+</head>
 <body>
-    <h1>Welcome to the File Serving Node</h1>
-    <p>This is a simple HTML file served by a Node.js server.</p>
+  <h2>Upload a File</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="myFile" required>
+        <button type="submit">Upload</button>
+    </form>
 </body>
 </html>

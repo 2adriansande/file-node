@@ -1,3 +1,82 @@
-*{
-    font-family: 'Courier New', Courier, monospace;
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full-page background */
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+}
+
+/* Centered card style */
+.container {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+/* Upload form */
+form {
+  margin-top: 1rem;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.6rem;
+  border: 2px dashed #4facfe;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+input[type="file"]:hover {
+  border-color: #00c6ff;
+  background: #f0f9ff;
+}
+
+/* Buttons */
+button, a {
+  display: inline-block;
+  background: #4facfe;
+  border: none;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+button:hover, a:hover {
+  background: #00c6ff;
+}
+
+/* Success message */
+.success-message {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #444;
 }
